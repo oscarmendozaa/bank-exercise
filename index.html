@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBVA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <nav>
+        <div class="nav-header">
+            <img src="./img/BBVALOGO.png" alt="BBVALOGO">
+
+            <div class="list-options">
+                <ul>
+                    <li>Inicio</li>
+                    <li>Contactanos</li>
+                </ul>
+            </div>
+
+            <span>
+                Iniciar sesion
+            </span>
+        </div>
+    </nav> -->
+    <header>
+        <img src="./img/logo main.png" alt="">  
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Accounts</a></li>
+            <li><a href="#">Transactions</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main>
+        <section class="body-container">
+
+          
+          <section class="form-block">
+
+            <section class="body-container">
+                <section class="form-block">
+                  <div class="account-buttons" id="cuentas">
+                    <h2>Inicio de Sesión</h2>
+                    <input type="text" id="username" placeholder="Ingresa tu nombre de usuario">
+                    <input type="password" id="password" placeholder="Ingresa tu contraseña">
+                    <button onclick="verificarUsuario()">Iniciar Sesión</button>
+                  </div>
+                </section>
+            </section>
+            
+            <!-- <div class="account-buttons" id="cuentas">
+              <h2>Selecciona una cuenta</h2>
+              <button onclick="seleccionarCuenta(0)">Persona 1</button>
+              <button onclick="seleccionarCuenta(1)">Persona 2</button>
+              <button onclick="seleccionarCuenta(2)">Persona 3</button>
+            </div> -->
+
+
+            <div id="opciones" style="display: none;" class="account-buttons" >
+                <h2>Selecciona una opción:</h2>
+                <button onclick="consultarSaldo()">Consultar Saldo</button>
+                <button onclick="ingresarMonto()">Ingresar Monto</button>
+                <button onclick="retirarMonto()">Retirar Monto</button>
+            </div>
+
+
+            
+            <div id="resultados" style="display: none;" class="account-buttons" >
+              <p id="mensaje"></p>
+              <p id="saldo"></p>
+              <button type="button" onclick="volverAOpciones()">Volver a opciones</button>
+            </div>
+          </section>
+        </section>
+      </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+</html>
